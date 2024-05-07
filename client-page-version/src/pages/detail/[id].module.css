@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.book_info_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cover_img_conatiner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover_img_conatiner::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cover_img_conatiner > img {
+  padding: 20px;
+  max-height: 350px;
+  height: 100%;
+  z-index: 1;
+}
+
+.title {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: gray;
+}
+
+.author {
+  color: gray;
+}
+
+.description {
+  background-color: rgb(245, 245, 245);
+  padding: 15px 15px;
+  line-height: 1.3;
+  white-space: pre-line;
+  border-radius: 5px;
+}
+
+.review_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review_count {
+  font-weight: bold;
+}
